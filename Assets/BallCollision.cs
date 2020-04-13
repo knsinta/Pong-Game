@@ -7,6 +7,7 @@ public class BallCollision : MonoBehaviour
     public int speed = 20;
     public Rigidbody2D ball;
     public Animator animtr;
+    public GameObject masterScript;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,7 @@ public class BallCollision : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other) {
         if(other.collider.name == "WallKanan" || other.collider.name == "WallKiri") {
+            masterScript.GetComponent<ScoringScript>().UpdateScore(other.collider.name);//ScoringScript :nama file
             StartCoroutine(jeda());   
         }
     }
