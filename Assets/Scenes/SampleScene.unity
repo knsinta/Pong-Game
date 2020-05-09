@@ -825,7 +825,6 @@ GameObject:
   - component: {fileID: 1442287831}
   - component: {fileID: 1442287834}
   - component: {fileID: 1442287833}
-  - component: {fileID: 1442287836}
   - component: {fileID: 1442287835}
   m_Layer: 0
   m_Name: RacketKiri
@@ -957,20 +956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: effff3b0ffcd9aa4392707afc3029826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
---- !u!114 &1442287836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1442287830}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: effff3b0ffcd9aa4392707afc3029826, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 30
+  speed: 40
 --- !u!1 &1446342329
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,7 +1300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 191623c5bf91a614c960af16909bc5cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
+  speed: 40
 --- !u!1 &1541178100
 GameObject:
   m_ObjectHideFlags: 0
@@ -1702,6 +1688,11 @@ PrefabInstance:
       propertyPath: masterScript
       value: 
       objectReference: {fileID: 1287651259}
+    - target: {fileID: 2217417594581730315, guid: 673c2353f1e160347bfda4f401214965,
+        type: 3}
+      propertyPath: speed
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2217417594581730326, guid: 673c2353f1e160347bfda4f401214965,
         type: 3}
       propertyPath: m_Name
